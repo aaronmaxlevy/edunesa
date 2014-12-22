@@ -1,0 +1,33 @@
+<ion-pane>
+      <ion-header-bar class="bar-stable" id="bar-edunesa">
+        <a href="#/home" class="button icon ion-navicon-round"></a>
+        <h1 class="title">edu<span id="nesa">nēsa</span></h1>
+      </ion-header-bar>
+      <ion-content scroll="false" on-swipe-right="backSwipe()">
+      <div id="edunesaAddTask">
+      	<label class="edunesa-textbox">
+      		<input type="text" name="taskName" ng-model="taskName" placeholder="Enter a task to complete">
+      	</label>
+      	<button class="edunesa-add-button" ng-click="addTask(taskName)">Add item</button>
+      </div>
+      <div class="edunesa-semiclear">
+      	<ion-scroll id="edunesaScroll">
+      	<ul class="list edunesa-list">
+          <li class="item" ng-repeat="task in tasks" ng-if="task.isDone==false" ng-click="setDone(task.taskId)" edunesa-task-id="{{task.taskId}}">{{task.title}}</li>
+          <li class="item item-icon-right" ng-repeat="task in tasks" ng-if="task.isDone==true" ng-click="setDone(task.taskId)" edunesa-task-id="{{task.taskId}}">{{task.title}}<i class="icon ion-checkmark-round"></i></li>
+    		<!--<li class="item">Test Item 1</li>
+    		<li class="item item-icon-right">Test Item 1<i class="icon ion-checkmark-round"></i></li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 1</li>
+    		<li class="item">Test Item 2</li>-->
+		</ul>
+	</ion-scroll>
+      </div>
+      </ion-content>
+    </ion-pane>

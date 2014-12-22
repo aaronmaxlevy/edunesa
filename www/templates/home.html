@@ -1,0 +1,15 @@
+<ion-pane>
+      <ion-header-bar class="bar-stable" id="bar-edunesa">
+        <button class="button icon ion-navicon-round"></button>
+        <h1 class="title">edu<span id="nesa">nēsa</span></h1>
+      </ion-header-bar>
+      <ion-content scroll="false">
+      <div class="col edunesa-home-flex">
+    	<a href="#/add-task" class="item item-icon-right row edunesa-home-item">What do you need to do?<i class="icon ion-chevron-right"></i></a>
+    	<hr class="edunesa-line"></hr>
+    	<a href="#/how-long" ng-show="isNotEmpty()"class="item item-icon-right row edunesa-home-item">When do you need to do it?<i class="icon ion-chevron-right"></i></a>
+    	<hr ng-show="isNotEmpty()" class="edunesa-line"></hr>
+    	<a href="#/stoppers" class="item item-icon-right row edunesa-home-item">What is stopping you?<i class="icon ion-chevron-right"></i></a>
+	</div>
+      </ion-content>
+    </ion-pane>

@@ -1,0 +1,25 @@
+<ion-pane>
+      <ion-header-bar class="bar-stable" id="bar-edunesa">
+        <a href="#/home" class="button icon ion-navicon-round"></a>
+        <h1 class="title">edu<span id="nesa">nēsa</span></h1>
+      </ion-header-bar>
+      <ion-content scroll="false" on-swipe-right="backSwipe()">
+      <div id="edunesaHowLong">
+      	<div class="card">
+          <div class="item" ng-bind="currentTask.title"></div>
+      </div>
+      <div class="edunesa-label">How long will it take you?</div>
+        <label class="edunesa-textbox edunesa-select-label item item-input item-select">
+      		<!--input type="text" placeholder="Enter a task to complete">-->
+          <select class="edunesa-select"  name="daysSelector" ng-model="currentTask.howLong">
+            <option value="1 day">1 day</option>
+            <option value="2 days">2 days</option>
+            <option value="3 days">3 days</option>
+          </select>
+      	</label>
+      </div>
+      <div class="edunesa-semiclear">
+      	<button ng-click="nextTask(daysSelector)" class="edunesa-add-button edunesa-next-button">Next Item</button>
+      </div>
+      </ion-content>
+    </ion-pane>

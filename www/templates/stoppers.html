@@ -1,0 +1,26 @@
+<ion-pane>
+      <ion-header-bar class="bar-stable" id="bar-edunesa">
+        <a href="#/home" class="button icon ion-navicon-round"></a>
+        <h1 class="title">edu<span id="nesa">nēsa</span></h1>
+      </ion-header-bar>
+      <ion-content scroll="false" on-swipe-right="backSwipe()">
+      <div id="edunesaHowLong">
+      	<div class="card">
+          <div class="item">
+            #{{currentStopperIndex + 1}}
+          </div>
+      </div>
+      <div class="edunesa-label">What do you do instead of work?</div>
+        <label class="edunesa-textbox">
+          <input ng-model="currentStopper.stopper" type="text">
+        </label>
+      </div>
+      <div class="edunesa-semiclear">
+        <div class="edunesa-label edunesa-label-move">What is that an idiotic move?</div>
+        <label class="edunesa-textbox edunesa-textarea">
+          <textarea ng-model="currentStopper.reasonNot" name="test1"></textarea>
+        </label>
+      	<button ng-click="nextStopper()" class="edunesa-add-button edunesa-next-button">Next Item</button>
+      </div>
+      </ion-content>
+    </ion-pane>
