@@ -48,7 +48,7 @@ ion-content {
 .edunesa-home-item {
 	color: #FFFFFF;
 	background-color: rgba(255, 255, 255, 0.0);
-	font-family: HelveticaNeue-UltraLight;
+	font-family: HelveticaNeue-Light;
 	border: none;
 	/*font-size: 24px;*/
 	font-size: 1.5em;
@@ -86,7 +86,7 @@ a.edunesa-home-item  {
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	font-family: HelveticaNeue-UltraLight;
+	font-family: HelveticaNeue-Light;
 	font-size: 18px;
 }
 
@@ -181,7 +181,7 @@ button.edunesa-add-button{
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	font-family: HelveticaNeue-UltraLight;
+	font-family: HelveticaNeue-Light;
 	font-size: 18px;
 	margin-bottom: 15px;
 }
@@ -212,7 +212,7 @@ button.edunesa-add-button{
 	background-color: rgba(25,19,19,0.11);;
 	border-radius: 12px;
 	color: white;
-	font-family: HelveticaNeue-UltraLight;
+	font-family: HelveticaNeue-Light;
 	font-size: 18px;
 	height: 148px;
 	width: 274px;
@@ -233,7 +233,7 @@ opacity: 0.11;
 background: #191313;
 border-radius: 12px;
 /* Because independent : */
-font-family: HelveticaNeue-UltraLight;
+font-family: HelveticaNeue-Light;
 font-size: 18px;
 color: #FFFFFF;
 line-height: 21px;
@@ -286,7 +286,7 @@ opacity: 0.36;
 background: #F6F6F6;
 border-radius: 12px;
 /* Enter a task to comp: */
-font-family: HelveticaNeue-UltraLight;
+font-family: HelveticaNeue-Light;
 font-size: 18px;
 color: #FFFFFF;
 line-height: 21px;
@@ -300,7 +300,7 @@ background: #FFFFFF;
 /* Rectangle 7: */
 border: 1px solid #FFFFFF;
 /* What do you need to : */
-font-family: HelveticaNeue-UltraLight;
+font-family: HelveticaNeue-Light;
 font-size: 24px;
 color: #FFFFFF;
 line-height: 28px;
